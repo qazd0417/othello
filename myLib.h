@@ -14,8 +14,8 @@ static int change_list[8][2];
 
 struct Gameboard
 {
-   int map[MAPSIZE][MAPSIZE];
-   int score[3];                     // 0: empty, 1: white, 2: black 
+   int map[MAPSIZE][MAPSIZE];		// ¸Ê ¹è¿­ 
+   int score[3];                    // 0: empty, 1: white, 2: black 
 };
 
 void ShowBoard(struct Gameboard *board);

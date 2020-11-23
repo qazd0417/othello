@@ -92,15 +92,15 @@ int PutStone(struct Gameboard *board, int x, int y, int turn)
    int my = 0;
    int color;
    int result = -1;
-
+   
    // 돌 선택
-   if (turn == 1)
+	if (turn == 1)
       color = BLACK;
-   else
+   	else
       color = WHITE;
 
    // 입력 값이 맵의 범위를 넘어가는지 확인
-   if ((x > MAPSIZE) || (y > MAPSIZE))
+   	if ((x > MAPSIZE) || (y > MAPSIZE))
       return -1;
 
    // 상, 하, 좌, 우, 대각선 8방향을 확인하여 주변에 돌의 유무를 확인
